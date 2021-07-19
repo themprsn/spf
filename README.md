@@ -5,7 +5,7 @@ I've made it so the overlay covers the dock as well, because the uncovered dock 
 
 A simple, open source Mac OS app for presenting on monitors or projectors that blowout highlights and details.
 
-Like Spf? Support me and my projects by <a href="https://ko-fi.com/O5O6363G4">buying me a coffee</a> via Ko-fi!
+Like Spf (themprsn fork)? Support me and my projects by <a href="https://ko-fi.com/themprsn">buying me a coffee</a> via Ko-fi!
 
 ![On/off again](https://github.com/tannerc/spf/blob/master/resources/offandon.png)
 
