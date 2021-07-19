@@ -68,7 +68,7 @@ class SpfMenuController: NSObject {
             
             for overlay in overlays {
                 overlay.setFrame(overlay.frame, display: true, animate: false)
-                overlay.alphaValue = CGFloat(overlayValue*0.01)
+                overlay.alphaValue = 1
                 overlay.makeKeyAndOrderFront(Any?.self)
                 clearMenuItem.isEnabled = true
                 overlay.backgroundColor = NSColor.init(red: 0, green: 0, blue: 0, alpha: CGFloat(overlayValue*0.01))
@@ -79,11 +79,11 @@ class SpfMenuController: NSObject {
             
             for screen in NSScreen.screens {
                 let screenRect = screen.frame
-                let newOverlay = NSWindow.init(contentRect: screenRect, styleMask: .fullScreen, backing: NSWindow.BackingStoreType(rawValue: 2)!, defer: false, screen: NSScreen.main)
+                let newOverlay = NSWindow.init(contentRect: screenRect, styleMask: .fullSizeContentView, backing: NSWindow.BackingStoreType(rawValue: 2)!, defer: false, screen: NSScreen.main)
                 newOverlay.isReleasedWhenClosed = false
-                newOverlay.level = .dock
+                newOverlay.level = .floating
                 newOverlay.animationBehavior = .none
-                newOverlay.alphaValue = CGFloat(overlayValue*0.01)
+                newOverlay.alphaValue = 1
                 newOverlay.isOpaque = false
                 newOverlay.ignoresMouseEvents = true
                 newOverlay.makeKeyAndOrderFront(Any?.self)
@@ -124,7 +124,7 @@ class SpfMenuController: NSObject {
         // About item selected, go to URL in user defined web browser
         
         if(sender.title == "Learn more →") {
-            if let url = URL(string: "https://svessler.com/"), NSWorkspace.shared.open(url) {}
+            if let url = URL(string: "https://github.com/tannerc/spf"), NSWorkspace.shared.open(url) {}
         }
     }
     
