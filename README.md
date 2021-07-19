@@ -1,4 +1,8 @@
-# Spf 1.2.1
+# Spf (themprsn fork) 1.2.1.1
+
+note:
+I've made it so the overlay covers the dock as well, because the uncovered dock was just too bright for my eyes. I'm currently working on making the overlay cover the menubar as well.
+
 A simple, open source Mac OS app for presenting on monitors or projectors that blowout highlights and details.
 
 Like Spf? Support me and my projects by <a href="https://ko-fi.com/O5O6363G4">buying me a coffee</a> via Ko-fi!
